@@ -32,4 +32,5 @@ return require('packer').startup(function()
 		run = 'cd app && yarn install',
 	})
 	use 'powerman/vim-plugin-AnsiEsc'
+	use 'brglng/vim-im-select'
 end)
