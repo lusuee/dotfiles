@@ -17,6 +17,7 @@ vim.cmd('set mouse=a')
 vim.cmd('set encoding=utf-8')
 vim.cmd('set fileencoding=utf-8')
 vim.cmd('set termguicolors')
+vim.cmd('set cursorline')
 
 -- vimwiki required
 vim.cmd('set nocompatible')

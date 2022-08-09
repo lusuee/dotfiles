@@ -1,5 +1,5 @@
 """ Map leader to space ---------------------
-let mapleader=";"
+let mapleader=" "
 
 """ Plugins  --------------------------------
 set surround
@@ -24,7 +24,9 @@ set nu
 set relativenumber
 set clipboard+=unnamedplus,unnamed
 
-set keep-english-in-normal-and-restore-in-insert
+let context_aware=0
+set keep-english-in-normal
+""" set keep-english-in-normal-and-restore-in-insert
 
 """ Idea specific settings ------------------
 set ideajoin
