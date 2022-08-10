@@ -24,9 +24,9 @@ set nu
 set relativenumber
 set clipboard+=unnamedplus,unnamed
 
-let context_aware=0
 set keep-english-in-normal
-""" set keep-english-in-normal-and-restore-in-insert
+"let context_aware=0
+"set keep-english-in-normal-and-restore-in-insert
 
 """ Idea specific settings ------------------
 set ideajoin
@@ -35,8 +35,6 @@ set idearefactormode=keep
 """ Mappings --------------------------------
 map <leader>f <Plug>(easymotion-s)
 map <leader>e <Plug>(easymotion-f)
-
-map <Space>f <Action>(ReformatCode)
 
 nmap <leader>n <Plug>(:NERDTreeFind<CR>)
 nmap <C-n> <Plug>(:NERDTreeToggle<CR>)

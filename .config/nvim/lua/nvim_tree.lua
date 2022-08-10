@@ -9,6 +9,7 @@ vim.g.nvim_tree_respect_buf_cwd = 0
 vim.g.nvim_tree_create_in_closed_folder = 0
 vim.g.nvim_tree_special_files = { ["README.md"] = 1, Makefile = 1, MAKEFILE = 1 }
 
+--[[
 vim.g.nvim_tree_show_icons = {
 	git = 1,
 	folders = 1,
@@ -39,7 +40,7 @@ vim.g.nvim_tree_icons = {
 		symlink_open = "",
 	}
 }
-
+]]
 NKeymap('<C-n>', ':NvimTreeToggle<CR>')
 NKeymap('<leader>r', ':NvimTreeRefresh<CR>')
 NKeymap('<leader>n', ':NvimTreeFindFile<CR>')
