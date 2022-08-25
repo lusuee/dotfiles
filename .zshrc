@@ -10,6 +10,46 @@ export ZSH=~/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="spaceship"
 
+SPACESHIP_PROMPT_ORDER=(
+  # time        # Time stamps section (Disabled)
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  # hg            # Mercurial section (hg_branch  + hg_status)
+  # package     # Package version (Disabled)
+  # gradle
+  # maven
+  node          # Node.js section
+  ruby          # Ruby section
+  elixir        # Elixir section
+  # xcode       # Xcode section (Disabled)
+  # swift         # Swift section
+  golang        # Go section
+  # php           # PHP section
+  rust          # Rust section
+  haskell       # Haskell Stack section
+  # julia       # Julia section (Disabled)
+  # docker      # Docker section (Disabled)
+  # aws           # Amazon Web Services section
+  # gcloud        # Google Cloud Platform section
+  venv          # virtualenv section
+  conda         # conda virtualenv section
+  pyenv         # Pyenv section
+  dotnet        # .NET section
+  # ember       # Ember.js section (Disabled)
+  kubectl       # Kubectl context section
+  terraform     # Terraform workspace section
+  # ibmcloud      # IBM Cloud section
+  exec_time     # Execution time
+  line_sep      # Line break
+  battery       # Battery level and status
+  # vi_mode     # Vi-mode indicator (Disabled)
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -70,7 +110,8 @@ DISABLE_MAGIC_FUNCTIONS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git 
+plugins=(git
+    autojump
 	zsh-autosuggestions
 	zsh-syntax-highlighting)
 
@@ -110,3 +151,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
