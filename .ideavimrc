@@ -24,9 +24,8 @@ set nu
 set relativenumber
 set clipboard+=unnamedplus,unnamed
 
-set keep-english-in-normal
-"let context_aware=0
-"set keep-english-in-normal-and-restore-in-insert
+let context_aware=1
+set keep-english-in-normal-and-restore-in-insert
 
 """ Idea specific settings ------------------
 set ideajoin
