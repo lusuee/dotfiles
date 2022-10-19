@@ -144,6 +144,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias n='nvim'
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+alias icat='kitty +kitten icat'
 
 export SDKMAN_DIR="$HOME/.sdkman"
 
@@ -153,3 +154,4 @@ export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export LC_ALL=en_US.UTF-8 
