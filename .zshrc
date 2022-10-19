@@ -145,6 +145,7 @@ source $ZSH/oh-my-zsh.sh
 alias n='nvim'
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 alias icat='kitty +kitten icat'
+alias t='tmux'
 
 export SDKMAN_DIR="$HOME/.sdkman"
 
