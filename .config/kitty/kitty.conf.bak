@@ -11,7 +11,7 @@
 # italic_font      auto
 # bold_italic_font auto
 
-font_family			 Cascadia Code 
+font_family			 Cascadia Code
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
@@ -1005,7 +1005,7 @@ hide_window_decorations yes
 
 # background_opacity 1.0
 
-background_opacity 0.9
+background_opacity 0.93
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1056,7 +1056,6 @@ background_opacity 0.9
 #: supported or background_image is set.
 
 # dim_opacity 0.75
-dim_opacity 1
 
 #: How much to dim text that has the DIM/FAINT attribute set. One
 #: means no dimming and zero means fully dimmed (i.e. invisible).
@@ -1485,7 +1484,6 @@ dim_opacity 1
 #: but less pretty.
 
 # macos_show_window_title_in all
-macos_show_window_title_in window
 
 #: Control where the window title is displayed on macOS. A value of
 #: window will show the title of the currently active window at the
@@ -2252,10 +2250,16 @@ macos_show_window_title_in window
 
 #: }}}
 
+# mac navigation
+map alt+left send_text all \x1b\x62
+map alt+right send_text all \x1b\x66
+
+# map cmd+left send_text all \x01
+# map cmd+right send_text all \x05
+
 #: }}}
 
-
 # BEGIN_KITTY_THEME
-# Gruvbox Dark Hard
+# Everforest Dark Hard
 include current-theme.conf
 # END_KITTY_THEME
